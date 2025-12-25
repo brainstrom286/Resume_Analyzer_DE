@@ -78,5 +78,3 @@ integrated in the future.
 🛠 Ready for ML/NLP integration
 
 ---
-
-]

@@ -1,0 +1,201 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 15px;
+}
+
+/* ===== APP WRAPPER ===== */
+.app {
+    width: 100%;
+    max-width: 760px;   /* tighter, premium */
+    margin: 0 auto;
+}
+
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: rgba(15, 23, 42, 0.9);
+    border-radius: 18px;
+    padding: 26px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+    margin: 0 auto 40px auto;
+    max-width: 640px;   /* ⬅️ CRITICAL */
+}
+
+
+/* ===== FORM ===== */
+.upload-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+/* ===== BUTTON ===== */
+button {
+    align-self: center;          /* ⬅️ center it */
+    width: 260px;                /* ⬅️ fixed width */
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #1e293b, transparent);
+    margin: 30px 0;
+}
+
+
+/* ===== RESULTS ===== */
+.results {
+    display: none;
+}
+
+/* ===== SCORE ===== */
+.score-box {
+    background: linear-gradient(135deg, #022c22, #064e3b);
+    border-radius: 18px;
+    padding: 18px 20px;   /* reduced height */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.score {
+    font-size: 48px;
+    font-weight: 700;
+    color: #22c55e;
+}
+
+.score-box span {
+    font-size: 14px;
+    color: #bbf7d0;
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+/* ===== GLASS CARDS ===== */
+.glass-card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 16px;
+    padding: 18px;
+}
+
+.glass-card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #facc15;
+}
+
+/* ===== LISTS ===== */
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 14px;
+    color: #cbd5f5;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.upload-card {
+    display: flex;
+    justify-content: center;
+}
+
+.card ul li {
+    line-height: 1.6;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .score {
+        font-size: 44px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
