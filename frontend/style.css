@@ -1,4 +1,4 @@
-/* ===== GLOBAL RESET ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@
     font-family: "Inter", "Segoe UI", sans-serif;
 }
 
-/* ===== BODY ===== */
 body {
     min-height: 100vh;
     background: radial-gradient(circle at top, #1e293b, #020617);
@@ -17,15 +16,15 @@ body {
     padding: 60px 15px;
 }
 
-/* ===== APP WRAPPER ===== */
+
 .app {
     width: 100%;
-    max-width: 760px;   /* tighter, premium */
+    max-width: 760px;
     margin: 0 auto;
 }
 
 
-/* ===== HEADER ===== */
+
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -43,7 +42,7 @@ body {
     font-size: 15px;
 }
 
-/* ===== CARDS ===== */
+
 .card {
     background: rgba(15, 23, 42, 0.9);
     border-radius: 18px;
@@ -54,7 +53,7 @@ body {
 }
 
 
-/* ===== FORM ===== */
+
 .upload-card form {
     display: flex;
     flex-direction: column;
@@ -74,10 +73,10 @@ input[type="file"] {
     color: #e5e7eb;
 }
 
-/* ===== BUTTON ===== */
+
 button {
-    align-self: center;          /* ⬅️ center it */
-    width: 260px;                /* ⬅️ fixed width */
+    align-self: center;
+    width: 260px;
     padding: 14px;
     border-radius: 14px;
     border: none;
@@ -101,16 +100,15 @@ button:hover {
 }
 
 
-/* ===== RESULTS ===== */
+
 .results {
     display: none;
 }
 
-/* ===== SCORE ===== */
 .score-box {
     background: linear-gradient(135deg, #022c22, #064e3b);
     border-radius: 18px;
-    padding: 18px 20px;   /* reduced height */
+    padding: 18px 20px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -126,14 +124,14 @@ button:hover {
     color: #bbf7d0;
 }
 
-/* ===== GRID ===== */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 22px;
 }
 
-/* ===== GLASS CARDS ===== */
+
 .glass-card {
     background: rgba(15, 23, 42, 0.75);
     backdrop-filter: blur(12px);
@@ -148,7 +146,7 @@ button:hover {
     color: #facc15;
 }
 
-/* ===== LISTS ===== */
+
 ul {
     list-style: none;
 }
@@ -160,7 +158,7 @@ ul li {
     line-height: 1.5;
 }
 
-/* ===== SKILLS ===== */
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -185,7 +183,7 @@ ul li {
 }
 
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 600px) {
     .header h1 {
         font-size: 26px;

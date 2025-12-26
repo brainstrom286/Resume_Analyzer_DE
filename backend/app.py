@@ -77,21 +77,21 @@ def analyze():
 
     text = extracted_text.lower()
 
-    # ---------------- INITIALIZE VARIABLES ----------------
+
     found_skills = []
     sections_found = []
     suggestions = []
     improvements = []
 
-    # ---------------- SKILL EXTRACTION ----------------
+    # For Skill Extraction
     found_skills = [skill for skill in SKILL_SET if skill in text]
 
-    # ---------------- SECTION DETECTION ----------------
+    # For Section Identification
     for section, keywords in SECTION_KEYWORDS.items():
         if any(k in text for k in keywords):
             sections_found.append(section)
 
-    # ---------------- SCORING ----------------
+    # Score Calculation
     score = 0
 
     # Skills score
@@ -121,7 +121,7 @@ def analyze():
         improvements.append("Resume length not optimal")
         suggestions.append("Keep resume between 1–2 pages")
 
-    # ---------------- SMART QUALITY CHECKS ----------------
+
 
     # Advanced skill check
     advanced_found = [s for s in ADVANCED_SKILLS if s in text]
@@ -162,7 +162,7 @@ def analyze():
 
     score = min(score, 100)
 
-    # ---------------- AI SEMANTIC ANALYSIS (TF-IDF) ----------------
+    # AI semantic analysis
 
     documents = [text, IDEAL_PROFILE_TEXT.lower()]
     vectorizer = TfidfVectorizer(stop_words="english")
